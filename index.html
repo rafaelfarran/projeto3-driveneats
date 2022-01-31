@@ -33,7 +33,7 @@
         <p>Primeiro, seu prato</p>
     </div>
     <section-1 data-identifier="dishes">
-        <div class="food-option combinado-sushi" onclick="selecionarPrato('combinado-sushi')">
+        <div class="food-option combinado-sushi" onclick="selecionarPrato('combinado-sushi','59.90')">
             <img src="imagens/combinado-sushi.png"/>
             <h1>Combinado de Sushi</h1>
             <p>Hosomaki</p>
@@ -41,7 +41,7 @@
             <h2>R$ 59,90</h2>
         </div>
 
-        <div class="food-option temaki" onclick="selecionarPrato('temaki')">
+        <div class="food-option temaki" onclick="selecionarPrato('temaki', '21.90')">
             <img src="imagens/temaki-salmao.jpg"/>
             <h1>Temaki</h1>
             <p>Cremily</p>
@@ -49,7 +49,7 @@
             <h2>R$ 21,90</h2>
         </div>
 
-        <div class="food-option shimeji" onclick="selecionarPrato('shimeji')">
+        <div class="food-option shimeji" onclick="selecionarPrato('shimeji', '24.90')">
             <img src="imagens/shimeji.jpg"/>
             <h1>Shimeji</h1>
             <p>Cogumelo</p>
@@ -64,21 +64,21 @@
     <p>Agora, sua bebida</p>
 </div>
 <section-2 data-identifier="drinks">
-    <div class="drinks-option">
+    <div class="drinks-option cocaCola" onclick="selecionarBebida('cocaCola', '3.50')">
         <img src="imagens/coca-cola-lata.jpg"/>
         <h1>Coca-Cola</h1>
         <p>Lata 300ml</p>
         <h2>R$ 3,50</h2>
     </div>
 
-    <div class="drinks-option">
+    <div class="drinks-option guaranaAntartica" onclick="selecionarBebida('guaranaAntartica', '3.50')">
         <img src="imagens/Guarana-Antartica.jpg"/>
         <h1>Guarana Antartica</h1>
         <p>Lata 300ml</p>
         <h2>R$ 3,50</h2>
     </div>
 
-    <div class="drinks-option">
+    <div class="drinks-option fantaUva" onclick="selecionarBebida('fantaUva', '3.50')">
         <img src="imagens/fanta-uva.jpg"/>
         <h1>Fanta Uva</h1>
         <p>Lata 300ml</p>
@@ -89,25 +89,25 @@
 
 <!--Section3-->
 <div class="titulo-section-3">
-    <p>Agora, sua bebida</p>
+    <p>Agora, sua Sobremesa</p>
 </div>
 <section-3 data-identifier="desserts">
-    <div class="desserts-option">
+    <div class="desserts-option Pudim" onclick="selecionarSobremesa('Pudim', '11.50')">
         <img src="imagens/pudim.jpg"/>
         <h1>Pudim</h1>
         <p>150g</p>
         <h2>R$ 11,50</h2>
     </div>
 
-    <div class="desserts-option">
+    <div class="desserts-option TortaDeLimao"  onclick="selecionarSobremesa('TortaDeLimao', '10.50')">
         <img src="imagens/torta-de-limao.jpg"/>
         <h1>Torta de limão</h1>
         <p>150g</p>
         <h2>R$ 10,50</h2>
     </div>
 
-    <div class="desserts-option">
-        <img src="imagens/mousse-chocolate.jpg"/>
+    <div class="desserts-option MousseChocolate">
+        <img src="imagens/mousse-chocolate.jpg"  onclick="selecionarSobremesa('MousseChocolate','9.50')">
         <h1>Mousse de chocolate</h1>
         <p>150g</p>
         <h2>R$ 9,50</h2>
@@ -116,9 +116,14 @@
 <!--endSection3-->
 
 <footer>
-    
-    <button class="button"><p>Selecione os 3 itens</p> <p> para fechar o pedido</p></button>
-    
+    <div> 
+        <a href="" target="" class="ativarbotao">
+            <button type="button" class="buttonDesabilitado">
+                <p>Selecione os 3 itens</p>
+                <p> para fechar o pedido</p>
+            </button>
+        </a>
+    </div>
 </footer>
 
 <script src="js/script.js"></script>
